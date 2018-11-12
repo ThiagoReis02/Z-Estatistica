@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Z estatística</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
+			<a href="#menu"><span>Menu</span></a>
+		</nav>
+		<a href="index.html" class="logo">Z estatística</a>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="descritiva.html">Estatítica Descritiva</a></li>
+			<li><a href="uniforme.html">Distribuição Uniforme</a></li>
+			<li><a href="binomial.html">Distribuição Binomial</a></li>
+			<li><a href="normal.html">Distribuição Normal</a></li>
+			<li><a href="correlacao.html">Correlação / Regressão</a></li>
+		</ul>
+	</nav>
+
+
+
+	<!-- Principal -->
+	<section id="main" class="wrapper">
+		<div class="inner">
+			<header class="align-center">
+				<h1>Estatística Descritiva</h1>
+			</header>
+		</div>
+
+		<!-- Formulário -->
+		<form action="">
+			<ul class="align-center">
+				<p>Você pode importar seu arquivo .csv ou inserir manualmente</p>
+
+				<a href="#" class="button icon fa-download">Importar</a>
+			</ul>
+
+			<!-- Inserir dados -->
+			<form action="">
+				<div class="">
+					<h4>Variável independente (x)</h4>
+					<div class="align-center">
+						<input type="text" name="xdado" placeholder="Digite aqui os valores de (x)" />
+					</div>
+					<h6>* Separar os dados por ponto e vírgula (;)</h6>
+
+					<h4>Variável dependente (y)</h4>
+					<div class="align-center">
+						<input type="text" name="ydado" placeholder="Digite aqui os valores de (y)" />
+					</div>
+					<h6>* Separar os dados por ponto e vírgula (;)</h6>
+
+					<!-- Botão enviar -->
+					<ul class="actions">
+						<li><input type="submit" id="aDados" value="Enviar" /></li>
+					</ul>
+			</form>
+
+			<!-- Resultados -->
+			<ul class="align-center">
+				<br />
+				<h3>Resultados</h3>
+				<hr />
+			</ul>
+
+			<!-- Tabela -->
+			<div class="table-wrapper">
+				<table class="alt">
+					<thead>
+						<tr>
+							<th>X</th>
+							<th>Y</th>
+							<th>Xi . Yi</th>
+							<th>X2</th>
+							<th>Y2</th>
+						</tr>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- Template para inserir dados na tabela acima-->
+			<template id="template1">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</template>
+
+	</section>
+
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<h2>Alunos</h2>
+			<ul class="actions">
+				<li><a href="https://www.instagram.com/ca.penna/" target="_blank" class="icon fa-instagram"><span class="label"></span>
+						Carla</a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label"></span> Carlos</a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label"></span> Thiago</a></li>
+				<li><a href="https://www.instagram.com/yago.siguinolfi/" target="_blank" class="icon fa-instagram"><span class="label"></span>
+						Yago</a></li>
+			</ul>
+		</div>
+		<div class="info">
+			FATEC Franca - Análise e Desenvolvimento de Sistemas - 2018
+		</div>
+	</footer>
+
+
+	
+	<!-- Scripts de comandos -->
+	<script type="text/javascript" src="js/correlacao.js"></script>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

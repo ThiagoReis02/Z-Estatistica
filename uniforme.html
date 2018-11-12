@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Z estatística</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
+			<a href="#menu"><span>Menu</span></a>
+		</nav>
+		<a href="index.html" class="logo">Z estatística</a>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="descritiva.html">Estatítica Descritiva</a></li>
+			<li><a href="uniforme.html">Distribuição Uniforme</a></li>
+			<li><a href="binomial.html">Distribuição Binomial</a></li>
+			<li><a href="normal.html">Distribuição Normal</a></li>
+			<li><a href="correlacao.html">Correlação / Regressão</a></li>
+		</ul>
+	</nav>
+
+
+
+	<!-- Principal -->
+	<section id="main" class="wrapper">
+		<div class="inner">
+			<header class="align-center">
+				<h1>Distribuição Uniforme</h1>
+			</header>
+		</div>
+
+		<!-- Formulário -->
+		<form action="">
+			<ul class="">
+				<h4>Inserir ponto mínimo</h4>
+				<input required type="text" name="dado" id="ponto_minimo" placeholder="Digite o ponto mínimo: " />
+				<!-- <input required type="number" name="dado" id="ponto_minimo" placeholder="Digite o ponto mínimo aqui" /> -->
+				</div>
+				<h6></h6>
+
+				<h4>Inserir ponto máximo</h4>
+				<input required type="number" name="dado" id="ponto_maximo" placeholder="Digite o ponto máximo aqui" />
+				</div>
+				<h6></h6>
+
+				<!-- Opções probabilidade-->
+				<div class="">
+					<h4>Inserir intervalo</h4>
+					<div class="select-wrapper">
+						<select name="category" id="category">
+							<option value="">- Intervalo -</option>
+							<option value="menor">Menor que</option>
+							<option value="maior">Maior que</option>
+							<!-- <option value="igual">Igual a</option> -->
+							<option value="entre">Entre</option>
+						</select>
+					</div>
+				</div>
+
+				<h4>Inserir valor</h4>
+				<div class="">
+					<input required type="text" name="dado" id="number" placeholder="Digite o valor aqui: " />
+					<!-- <input required type="number" name="number" id="number" value="" placeholder="Digite o valor aqui" /> -->
+				</div>
+				<h6>*Para opção entre separar valores por (;)</h6>
+
+				<!-- Botão enviar -->
+				<ul class="actions">
+					<li><input type="button" id="aDados" value="Enviar" onclick="SelectUni()" /></li>
+				</ul>
+
+
+		</form>
+	</section>
+
+	<!-- Resultados -->
+	<ul class="align-center">
+		<br />
+		<h3>Resultados</h3>
+		<hr />
+		<div id="resultadoDU"></div>
+	</ul>
+
+	<div id="media"></div>
+	<div id="dp"></div>
+	<div id="cv"></div>
+	<div id="uniforme"></div>
+
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<h2>Alunos</h2>
+			<ul class="actions">
+				<li><a href="https://www.instagram.com/ca.penna/" target="_blank" class="icon fa-instagram"><span class="label"></span>
+						Carla</a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label"></span> Carlos</a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label"></span> Thiago</a></li>
+				<li><a href="https://www.instagram.com/yago.siguinolfi/" target="_blank" class="icon fa-instagram"><span class="label"></span>
+						Yago</a></li>
+			</ul>
+		</div>
+		<div class="info">
+			FATEC Franca - Análise e Desenvolvimento de Sistemas - 2018
+		</div>
+	</footer>
+
+
+
+	<!-- Scripts de comandos -->
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="./js/distribuicao.js"></script>
+
+
+</body>
+
+</html>
